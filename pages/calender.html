@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>我的优惠券</title>
+<style type="text/css">
+    .calender{width: 100%;min-width:300px;font-size:12px;font-family: Arial,'宋体';}
+    .cal_show{width:80%;min-width:280px;float: left;}
+    .cal_prev{width:10%;min-width:50px;float: left;line-height:264px;height:264px;text-align: center;background:green;font-weight: bolder;font-size: 15px;color: white;cursor:pointer;}
+    .cal_next{width:10%;min-width:50px;float: right;line-height:264px;height:264px;text-align: center;background:green;font-weight:bold;font-size: 15px;color: white;cursor:pointer;}
+    .cal_month{height:40px;line-height:200%;font-size:18px;font-weight: bolder;text-align: center;width: 100%;}
+    .cal_week{width: 100%;height:30px;text-align:center;padding:0;list-style:none;font-weight: bolder;margin: 0px;}
+    .cal_week li{border: 1px solid gray;width: 14%;height:30px;line-height:30px;color:green;float:left;}
+    .cal_day{width:100%;margin:0;height:150px;padding:0;text-align:center;list-style:none;}
+    .cal_day li{width:14%;height:30px;line-height: 30px;float:left;background:lightgray;border: 1px solid gray;cursor:pointer;}
+    .cal_day li.active{background:orange;}
+    .cal_day li:hover{background:orange;}
+</style>
+</head>
+
+<body>
+
+<div id="calender" class="calender">
+    <div class="cal_prev">
+        上一月
+    </div>
+    <div class="cal_show">
+        <div class="cal_month">1月</div>
+        <ul  class="cal_week">
+            <li>星期日</li>
+            <li>星期一</li>
+            <li>星期二</li>
+            <li>星期三</li>
+            <li>星期四</li>
+            <li>星期五</li>
+            <li>星期六</li> 
+        </ul>
+        <ul class="cal_day">       
+            <li>1</li>        <li>2</li>        <li>3</li>     <li>4</li>        <li>5</li>        <li>6</li>        <li>7</li>
+            <li>8</li>        <li>9</li>        <li>10</li>        <li>11</li>        <li>12</li>        <li>13</li>        <li>14</li>    
+            <li>15</li>        <li>16</li>        <li>17</li>        <li>18</li>        <li>19</li>        <li>20</li>        <li>21</li>
+            <li>22</li>        <li>23</li>        <li>24</li>        <li>25</li>        <li>26</li>        <li>27</li>        <li>28</li>
+            <li>29</li>        <li>30</li>        <li>31</li>
+        </ul>
+    </div>
+    <div class="cal_next">
+        下一月
+    </div>
+</div>
+<!--
+    引入sea.js 放置于此
+-->
+<script
+    src="../js/sea/sea.js" 
+    data-config="../js/config.js" 
+    data-main="../js/calender.js"
+></script>
+</body>
+</html>

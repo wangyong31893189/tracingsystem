@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>首页</title>
+<style type="text/css">
+    body{margin: 0;padding: 0;font-family:"FZZXHJW","幼圆",Arial;}
+    .fr{float:right;}
+    .fl{float:left;}
+    .clear{clear:both;}
+    .none{display:none;}
+    .block{display:block;}
+    .triangle{background:url(../img/sprite.png) no-repeat;background-position:0px -6px;width:8px;height:6px;display:inline-block;margin-left:5px;}
+    .red{color:red;}
+
+    .head{background:url(../img/head_bg.png);width:100%;max-width:1875px;height:75px;margin-left:auto;margin-right: auto;margin-top:0;}
+    .head .logo{padding-left:38px;padding-top:8px;float:left;width: 196px;}
+    .head .center{color:white;font-size:12px;float:right;}
+    .head .center .message{height:30px;line-height: 30px;margin-top:10px;text-align:right;margin-right:20px;}
+    .head .center .message span{margin-left:20px;}
+    .head .center .message b a{color:red;}
+    .login{height:30px;line-height:30px;text-align:right;margin-right:20px;}
+    .login span{margin-left:20px;display:inline-block;}
+    .login .welcome{display:block;height:25px;float:left;}
+    .login .user{float: left;margin-top:3px;margin-left:5px;}
+    .user .left{background:url(../img/top_user_left.png) no-repeat;width:9px;height:25px;background-position:0px 0px;display:block;float:left;}
+    .user .center{background:url(../img/top_user_center.png) repeat-x;height:25px;line-height:25px;background-position:8px 0px;display:block;float:left;font-style:normal;font-weight:bolder;}
+    .user .right{background:url(../img/top_user_right.png) no-repeat;width:9px;height:25px;background-position:0px 0px;display:block;float:left;}
+    .login .time{display:block;float: left;}
+    
+
+    .nav{background:#003669;height:50px;line-height:50px;color:#fff;}
+    .nav i{background:url(../img/sprite.png) no-repeat;background-position:0 -12px;height:21px;width:1px;display:inline-block;margin-bottom:-7px;}
+    .nav span{padding:0 10px;width:80px;display:inline-block;text-align:center;}
+    .nav .active{background:#006dd1;}
+    .nav .search{margin-right:30px;}
+    .nav .left{background:url(../img/search_left.png) no-repeat;display:inline-block;width:14px;height:32px;float:left;margin-top:8px;}
+    .nav .center{background:url(../img/search_center.png) repeat-x;display:inline-block;float:left;height:32px;line-height:32px;margin-top:8px;}
+    .nav .center input{width:240px;border:none;height:24px;margin:0;background:#f0f0f0;float:left;margin-top:2px;}
+    .nav .center .del{background:url(../img/sprite.png) no-repeat;background-position:0 -32px;width:16px;height:20px;float:left;margin-top:7px;margin-right:3px;}
+    .nav .center .divide{background:url(../img/sprite.png) no-repeat;background-position:-36px -32px;width:3px;height:22px;float:left;margin:5px 5px;}
+    .nav .center .sech_ico{background:url(../img/sprite.png) no-repeat;background-position:-16px -30px;width:20px;height:20px;float:left;margin-top:5px;}
+    .nav .right{background:url(../img/search_right.png) no-repeat;display:inline-block;width:14px;height:32px;float:left;margin-top:8px;}
+
+    .content .title{height:85px;width:100%;background:#f5f8fa;}
+    .content .title .case{margin-left:78px;padding-top:11px;}
+    .content .title .name{font-weight:bolder;font-size: 18px;height:85px;width:100%;}
+    .content .add_btn{}
+</style>
+</head>
+
+<body>
+<header class="head">
+    <div class="logo">
+        <img src="../img/logo.png"/>
+    </div>
+    <div class="center">
+        <div class="message"><span>消息(<b class="red"><a href="#">01</a></b>)<i class="triangle"></i></span><span>系统设置</span><span>帮助中心</span></div>        
+        <div class="login"><span class="welcome">欢迎您,</span><span class="user"><i class="left"></i><em class="center">XXX<i class="triangle"></i></em><b class="right"></b></span><span class="time">上次登录时间2014/08/22 00:00:00</span><span class="logout">退出</span></div>
+    </div>   
+</header>
+ <nav class="nav"><span>首页</span><i></i><span>公司组织</span><i></i><span>产品管理</span><i></i><span>标签管理</span><i></i><span>生产管理</span><i></i><span class="active">供应链</span><i></i><span>仓储</span><i></i><span>订单</span><i></i><span>权限中心</span><strong class="fr search"><em class="left"></em><b class="center"><input type="text" ><em class="del"></em><em class="divide"></em><em class="sech_ico"></em></b><em class="right"></em></strong></nav>
+<section class="content">
+    <div class="title">
+        <div class="case"><span class="name">供应商</span></div>
+        <div class="add_btn"><span class="left"></span><span class="center">创建</span><span class="right"></span></div>
+    </div>
+
+</section>
+
+<footer></footer>
+
+<!--
+    引入sea.js 放置于此
+-->
+<script
+    src="../js/sea/sea.js" 
+    data-config="../js/config.js" 
+    data-main="../js/calender.js"
+></script>
+</body>
+</html>
