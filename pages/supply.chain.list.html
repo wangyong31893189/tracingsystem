@@ -13,7 +13,9 @@
     /*color*/
     .c_w{color:#fff;}/*白色*/.c_r{color:red;}/*红色*/.c_b{color:#000;}/*黑色*/.c_1{color:#6482a0;}/*文字链接颜色*/
     /**margin*/
-    .m_r_a{margin-right:auto;}.m_r_20{margin-right:20px;}.m_r_3{margin-right:3px;}.m_r_30{margin-right:30px;}.m_l_0{margin-left:0;}.m_l_5{margin-left:5px;}.m_l_10{margin-left:10px;}.m_l_20{margin-left:20px;}.m_l_0_i{margin-left:0!important;}.m_l_5_i{margin-left:5px!important;}.m_l_a{margin-left:auto;}.m_l_78{margin-left:78px;}.m_t_0{margin-top:0;}.m_t_3{margin-top:3px;}.m_t_8{margin-top:8px;}.m_t_10{margin-top:10px;}.m_t_15{margin-top:15px;}.m_t_20{margin-top:20px;}.m_t_7{margin-top:7px;}.m_t_5{margin-top:5px;}.m_5{margin:5px;}.m_l_700{margin-left:700px;}.m_r_48{margin-right:48px;}
+    .m_r_a{margin-right:auto;}.m_r_20{margin-right:20px;}.m_r_3{margin-right:3px;}.m_r_30{margin-right:30px;}.m_l_0{margin-left:0;}.m_l_5{margin-left:5px;}.m_l_10{margin-left:10px;}.m_l_20{margin-left:20px;}.m_l_0_i{margin-left:0!important;}.m_l_5_i{margin-left:5px!important;}.m_l_a{margin-left:auto;}
+        .m_l_78{margin-left:78px;}.m_t_0{margin-top:0;}.m_t_3{margin-top:3px;}.m_t_8{margin-top:8px;}.m_t_10{margin-top:10px;}.m_t_15{margin-top:15px;}.m_t_20{margin-top:20px;}.m_t_7{margin-top:7px;}.m_t_5{margin-top:5px;}.m_5{margin:5px;}.m_l_700{margin-left:700px;}.m_r_48{margin-right:48px;}
+        .m_r_78{margin-right:78px;}
     /*padding*/
     .p_t_20{padding-top:11px;}.p_t_8{padding-top:8px;}.p_l_38{padding-left:38px;} .p_0_20{padding:0 20px;} .p_0_10{padding:0 10px;} 
     .p_l_5{padding-left:5px;}  .p_r_5{padding-right:5px;}
@@ -86,7 +88,17 @@
     .page .list{background-position:-64px -38px;}
     .page .list_a{background-position:-90px -38px;}
 
-    .tip{background-position:-8px 0px;width:90px;height:35px;top:133px;right:18px;}
+    .tip{background-position:-8px 0px;width:90px;height:35px;top:133px;right:188px;}
+    table{font-weight:normal;font-size:14px;text-align:left;}
+    table thead{background:#f1f1f1;height:40px;line-height:40px;}
+    table thead th{border-bottom:1px solid #b5b5b5;border-right:1px solid #e0e0e0;font-weight:lighter;padding-left:5px;}
+    table thead th:last-child{border-right:none;}
+    table tbody td{height:40px;line-height:40px;border-right:1px solid #e0e0e0;padding-left:5px;}
+    table tbody td:last-child{border-right:none;}
+    table tbody tr:nth-child(odd){background:#e8f4ff;}
+    .b_e8f4ff{background:#e8f4ff;}
+    .b_f5f8fa{background:#f5f8fa;}
+    .copyright{font-family:"微软雅黑","幼园","FZZXHJW",Arial;}
 </style>
 </head>
 
@@ -113,7 +125,7 @@
 
         <div class="sprite p_a tip c_w t_a_c l_h_25" id="tip">图文视图</div>
 
-        <span class="page f_r m_r_48 l_h_20">
+        <span class="page f_r m_r_78 l_h_20">
             <em class="sprite first h_10 w_15 f_l m_l_10 m_t_5"></em>
             <em class="sprite prev h_10 w_10 f_l m_l_10 m_t_5"></em>
             <em class="f_l m_l_10 f_s_n">1/30</em>
@@ -139,17 +151,116 @@
 
         <span class="box f_r m_l_10">
                 <i class="sprite left w_4 h_24 f_l"></i>
-                <i class="sprite center h_24 f_l p_l_5 f_s_n">12<em class="sprite triangle_b w_8 h_6 d_i m_l_5"></em></i>
+                <i class="sprite center h_24 w_27 f_l p_l_5 f_s_n">12<em class="sprite triangle_b w_8 h_6 d_i m_l_5"></em></i>
                 <i class="sprite right w_4 h_24 f_l"></i>
         </span>
 
         <span class="f_r m_r_20">更多<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
         </div>
     </div>
+    <!--显示列表-->
+
+        <table class="m_r_78 m_l_78" border="0" cellspacing="0" cellpadding="0" width="90%" >
+           <thead>
+               <tr>
+                <th><input type="checkbox"/></th>
+                <th>名称<em class="sprite triangle_b w_8 h_6 d_i m_l_5"></em></th>
+                <th>类型</th>
+                <th>电话</th>
+                <th>电子邮件</th>
+                <th>详细地址</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
 
 </section>
 
-<footer></footer>
+<footer class="b_f5f8fa">
+    <div class="copyright f_s_14 t_a_c h_50 l_h_50">Copyright©2013-2014 Intelligent Trace All Rights Reserved 智溯科技公司 版权所有</div>
+</footer>
 
 <!--
     引入sea.js 放置于此
