@@ -8,7 +8,7 @@
 <title>供应链列表页</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <style type="text/css">
-    
+     
 </style>
 </head>
 
@@ -54,9 +54,9 @@
 <section class="content">
     <div class="title h_85 w_a ">
         <div class="m_l_78 p_t_20"><span class="w_a f_s_18 h_85 f_w_b c_2">供应商</span><span class="m_l_5 c_3 f_s_18 h_85 f_w_b">/</span><span class="m_l_5 c_3 f_s_18 h_85 f_w_b">ASUSTeK</span></div>
-        <div class="m_l_78 m_t_15 f_s_14 l_h_22">
+        <div class="m_l_78 m_t_15 f_s_13 l_h_22">
 
-            <b class="btn"><span class="left f_l h_24 w_5"></span><span class="center f_l h_24 c_w ">创建</span><span class="right f_l h_24 w_5"></span><span class="m_l_5">或</span><span class="c_1 m_l_5">编辑</span></b>
+            <b class="btn"><span class="c_1 m_l_5 d_i t_a_c w_49" id="create">创建</span><em class="m_l_5 c_4 f_s_n">或</em><span class="c_1 m_l_5 d_i t_a_c w_49 active" id="edit">编辑</span></b>
         
 
         <span class="page f_r m_r_78 l_h_20">
@@ -116,107 +116,26 @@
         </div>-->
 
 
-        <span id="more" class="f_r m_r_20">更多<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
-        <span id="attachment" class="f_r m_r_20">附件<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
-        <span id="print" class="f_r m_r_20">打印<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
+        <span id="more" class="f_r m_r_78">更多<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
+        <!--<span id="attachment" class="f_r m_r_20">附件<i class="sprite triangle_b w_8 h_6 d_i"></i></span>
+        <span id="print" class="f_r m_r_20">打印<i class="sprite triangle_b w_8 h_6 d_i"></i></span>-->
         </div>
     </div>
     <!--显示列表-->
 
-        <table class="m_r_78 m_l_78" border="0" cellspacing="0" cellpadding="0" width="90%" >
-           <thead>
-               <tr>
-                <th><input type="checkbox" id="checkall"/></th>
-                <th>名称<em class="sprite triangle_b w_8 h_6 d_i m_l_5"></em></th>
-                <th>类型</th>
-                <th>电话</th>
-                <th>电子邮件</th>
-                <th>详细地址</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                 <tr>
-                    <td><input type="checkbox"/></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="box_container">
+        <div class="photo_tip" style="background:url(../img/tip_photo.png) no-repeat;width:350px;height:38px;position:relative;top:30px;left:-95px;color:#fff;font-size:12px;line-height:30px;text-align:center;">该字段保持的图像用作联系人头像 限制为1024x1024</div>
+        <div class="photo" style="position:relative;width:106px;height:106px;background:url(../img/photo_box.png) no-repeat;top:40px;margin-left:30px;">
+            <img src="../img/photo_box.png" style="">
+            <div class="edit_bg" style="background:url(../img/photo_bg.png) no-repeat;width:90px;height:25px;position:absolute;top:0;left:5px;">
+                <em class="edit_ico" style="background:url(../img/edit_ico.png) no-repeat;width:18px;height:16px;position:absolute;top:3px;left:3px;"></em>
+                <em class="del_ico" style="background:url(../img/del_ico.png) no-repeat;width:15px;height:17px;position:absolute;top:2px;right:3px;"></em>
+            </div>
+            <p></p>
+            <p></p>
+        <div>
+
+    </div>
 
 
 </section>
