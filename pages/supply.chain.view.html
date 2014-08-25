@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>供应链列表页</title>
+<title>供应链查看详情页</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <style type="text/css">
-     
+
 </style>
 </head>
 
@@ -68,7 +68,7 @@
            
             <span class="box m_l_10 f_l">
                 <i class="sprite left w_4 h_24 f_l"></i>
-                <i class="sprite center h_24 f_l p_l_5 p_r_5 f_s_n"><input type="text" value="12" class="w_20 border_n b_f0f0f0"/></i>
+                <i class="sprite center h_24 f_l p_l_5 p_r_5 f_s_n"><input type="text" value="12" class="w_20 border_n b_f5f8fa"/></i>
                 <i class="sprite right w_4 h_24 f_l"></i>
             </span>
 
@@ -123,18 +123,84 @@
     </div>
     <!--显示列表-->
 
-    <div class="box_container">
-        <div class="photo_tip" style="background:url(../img/tip_photo.png) no-repeat;width:350px;height:38px;position:relative;top:30px;left:-95px;color:#fff;font-size:12px;line-height:30px;text-align:center;">该字段保持的图像用作联系人头像 限制为1024x1024</div>
-        <div class="photo" style="position:relative;width:106px;height:106px;background:url(../img/photo_box.png) no-repeat;top:40px;margin-left:30px;">
-            <img src="../img/photo_box.png" style="">
-            <div class="edit_bg" style="background:url(../img/photo_bg.png) no-repeat;width:90px;height:25px;position:absolute;top:0;left:5px;">
-                <em class="edit_ico" style="background:url(../img/edit_ico.png) no-repeat;width:18px;height:16px;position:absolute;top:3px;left:3px;"></em>
-                <em class="del_ico" style="background:url(../img/del_ico.png) no-repeat;width:15px;height:17px;position:absolute;top:2px;right:3px;"></em>
+    <div class="photo_b_container">
+        <div class="photo_b_tip0">
+            <div class="photo_b_tip d_n" id="photo_b_tip">
+            该字段保持的图像用作联系人头像 限制为1024x1024
             </div>
-            <p></p>
-            <p></p>
-        <div>
-
+        </div>
+        <div class="photo_b_photo">
+            <img src="../img/photo_box.png" id="personal_pic">
+            <div class="edit_bg d_n" id="pic_edit_bg">
+                <em class="edit_ico" id="pic_edit_id"></em>
+                <em class="del_ico" id="pic_del_id"></em>
+            </div> 
+            
+            <div class="photo_title">
+                <p class="photo_h_title">ASUSTeK</p>
+                <p class="photo_sub_title">办公用品</p>
+            </div>         
+        </div>
+       
+        <div class="info_right_box" style="">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>           
+        </div>
+        
+        <div class="address_box">
+            <div class="address_l">
+                <div class="address_inner">
+                    <ul class="address_l_l h_129"><li>地址</li></ul>
+                    <ul class="address_l_r">
+                        <li >XXXXXXXXXXXXXX</li>
+                        <li>上海</li>
+                        <li>中国</li>
+                    </ul>
+                </div>
+                <div class="addr_internet">
+                    <ul class="address_l_l"><li>网址</li></ul>
+                    <ul class="address_l_r">
+                        <li>www.XXXXXX.com</li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="address_r" style="">
+                <ul class="address_l_l">
+                    <li>电话</li>
+                    <li>手机</li>
+                    <li>传真</li>
+                    <li>电子邮箱</li>
+                </ul>
+                <ul class="address_l_r">
+                    <li>13816085314</li>
+                    <li>13816085314</li>
+                    <li>中国</li>
+                    <li>wangyong.ctit@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="view_tab_box">
+            <ul class="tab_ul">
+                <li class="active" data-id="linker">联系人</li>
+                <li data-id="remark">内部备注</li>
+                <li data-id="certificate">相关证书</li>
+            </ul>
+            <div id="tab_linker">
+                <p class="linker_pic">
+                    <img src="../img/tou.jpg">
+                </p>
+                <p class="linker_txt">
+                    <span>Tang Tsui</span>
+                    <i>Service Manager</i>
+                    <em>tang@asustek.com</em>
+                </p>
+            </div>
+            <div id="tab_remark" class="d_n m_l_20 m_t_10">内部备注</div>
+            <div id="tab_certificate" class="d_n m_l_20 m_t_10">相关证书</div>
+        </div>
     </div>
 
 

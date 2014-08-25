@@ -79,29 +79,6 @@ define(function(require, exports, module) {
     		$mail.bind("mouseleave",function(){
     			that.handlerOut(this);
     		});*/
-
-    		//姓名后面加按钮，点击弹出下拉列表
-    		var $per_info=$("#per_info");
-    		$per_info.bind("click",function(){
-    			that.showList("personal","<li>个人档案</li><li>帐号设置</li><li>更改密码</li>",this);    			
-    		});
-
-
-
-    		//选择全部
-    		var $checkall=$("#checkall");
-    		$checkall.bind("click",function(){
-    			if(this.checked){
-    				$("table tbody input[type=checkbox]").each(function(){
-    					this.checked=true;
-    				});
-    			}else{
-    				$("table tbody input[type=checkbox]").each(function(){
-    					this.checked=false;
-    				});
-    			}
-    		});
-
     		//更多操作
     		var $more=$("#more");
     		$more.bind("click",function(){
@@ -180,6 +157,50 @@ define(function(require, exports, module) {
 				});
 			});
 
+            //绑定鼠标放入和移出用户头像的时候的事件 
+            var $personal_pic=$("#personal_pic");
+            $personal_pic.bind("mouseenter",function(){
+                var $pic_edit_bg=$("#pic_edit_bg");
+                if($pic_edit_bg.css("display")=="block"){
+                    return;
+                }
+                var $photo_b_tip=$("#photo_b_tip");
+                $pic_edit_bg.show();
+                $photo_b_tip.show();
+                var $pic_edit_id=$("#pic_edit_id");
+                $pic_edit_id.bind("click",function(){
+                    alert("编辑");
+                });
+                var $pic_del_id=$("#pic_del_id");
+                $pic_del_id.bind("click",function(){
+                    alert("删除");
+                });
+            });
+            /*
+            $personal_pic.bind("mouseleave",function(){
+                 var $pic_edit_bg=$("#pic_edit_bg");
+                 var $photo_b_tip=$("#photo_b_tip");
+                $pic_edit_bg.hide();
+                $photo_b_tip.hide();
+                var $pic_edit_id=$("#pic_edit_id");
+                $pic_edit_id.unbind("click");
+                var $pic_del_id=$("#pic_del_id");
+                $pic_del_id.unbind("click");
+            });*/
+
+            $tab_ul_lis=$(".tab_ul li");
+            $tab_ul_lis.each(function(){
+                $(this).bind("click",function(){
+                    $tab_ul_lis.each(function(){
+                        var con_id=$(this).attr("data-id");
+                        $("#tab_"+con_id).hide();
+                        $(this).removeClass("active");
+                    });
+                    var con_id=$(this).attr("data-id");
+                    $(this).addClass("active")
+                   $("#tab_"+con_id).show();
+                });
+            });
     		
     	},
     	showFlag:function(obj,show){

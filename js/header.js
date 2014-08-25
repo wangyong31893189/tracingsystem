@@ -15,6 +15,13 @@ define(function(require, exports, module) {
                 });
 
     		});
+
+            //姓名后面加按钮，点击弹出下拉列表
+            var $per_info=$("#per_info");
+            $per_info.bind("click",function(){
+                that.showList("personal","<li>个人档案</li><li>帐号设置</li><li>更改密码</li>",this);               
+            });
+
     	},
         showConfirm:function(msg,yes,no){            
             var $confirm=$("#confirm");
@@ -43,9 +50,28 @@ define(function(require, exports, module) {
                 $confirm.hide(); 
                 this.unbind("click");
             });
+        },
+        showList:function(id,text_html,obj){
+            var $more_list=$("#"+id);
+                if($more_list.length==0){
+                    var html='<ul class="personal p_a l_h_25 f_s_12 p_1 l_s_n b_w d_n" id="'+id+'">'
+                    +text_html+'</ul>';
+                    $(document.body).append(html);                  
+                    $more_list=$("#"+id);
+                }
+                //$("personal")
+                if($more_list.css("display")=="block"){
+                    $more_list.hide();
+                }else{
+                    var top=$(obj).offset().top;
+                    top+=$(obj).height()-10;
+                    var left=$(obj).offset().left-($more_list.width()/2)-10;
+                    //left-=($("#tip").width()/4)+($(obj).width()/2);
+                    $more_list.css("top",top).css("left",left).show();
+                }
         }
     };
 
     header.init();
-   // module.exports  = Base64Encode;
+    module.exports  = header;
 });
